@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PHEPHANA BOY - 0 to 10k/Month</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            red: '#DC2626',
+                            yellow: '#FACC15',
+                            dark: '#111827',
+                        }
+                    },
+                    animation: {
+                        'blob': 'blob 7s infinite',
+                        'bounce-slow': 'bounce 3s infinite',
+                    },
+                    keyframes: {
+                        blob: {
+                            '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                            '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                            '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                            '100%': { transform: 'translate(0px, 0px) scale(1)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Custom Fade In */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 overflow-x-hidden selection:bg-yellow-400 selection:text-red-900">
+
+    <!-- Navbar -->
+    <nav class="bg-white/95 backdrop-blur-md shadow-md fixed w-full z-50 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
+                    <i class="fas fa-crown text-yellow-500 text-2xl mr-2 animate-pulse"></i>
+                    <span class="font-black text-xl tracking-tighter text-gray-900">PHEPHANA <span class="text-red-600">BOY</span></span>
+                </div>
+                <div>
+                    <a href="#contact" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2.5 rounded-full font-bold text-sm transition duration-300 shadow-lg hover:shadow-red-500/30 transform hover:scale-105">
+                        Join Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative bg-red-700 pt-36 pb-24 px-4 sm:px-6 lg:px-8 overflow-hidden text-center min-h-[80vh] flex flex-col justify-center">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="absolute bg-yellow-400 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob top-0 -left-4"></div>
+            <div class="absolute bg-red-500 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000 bottom-0 -right-4"></div>
+            <div class="absolute bg-pink-600 w-72 h-72 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+        </div>
+
+        <div class="relative max-w-5xl mx-auto z-10">
+            <div class="inline-flex items-center bg-yellow-400 text-red-900 font-bold px-4 py-1.5 rounded-full text-sm mb-8 fade-in-up shadow-lg border border-yellow-300">
+                <i class="fas fa-mobile-alt mr-2 animate-bounce"></i> 100% Mobile Based Work
+            </div>
+            
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white tracking-tight mb-8 leading-tight fade-in-up delay-100 drop-shadow-sm">
+                Go From <br class="md:hidden" />
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-500 drop-shadow-sm decoration-clone">0 to 10k/Month</span>
+            </h1>
+            
+            <p class="mt-2 text-lg sm:text-xl md:text-2xl text-red-100 max-w-2xl mx-auto fade-in-up delay-200 font-medium">
+                Unlock your potential with <span class="bg-white text-red-700 px-2 py-0.5 rounded font-black transform -skew-x-6 inline-block">PHEPHANA BOY</span>. <br class="hidden sm:block">Build a digital empire using just your smartphone.
+            </p>
+
+            <div class="mt-12 flex flex-col sm:flex-row justify-center gap-4 fade-in-up delay-300">
+                <button onclick="openWhatsApp()" class="group bg-yellow-400 hover:bg-yellow-300 text-red-900 font-bold py-4 px-8 rounded-full shadow-xl shadow-yellow-500/20 transform transition hover:-translate-y-1 hover:scale-105 flex items-center justify-center text-lg border-2 border-yellow-200">
+                    <i class="fab fa-whatsapp text-3xl mr-3 group-hover:rotate-12 transition-transform"></i>
+                    <span>Start Chatting Now</span>
+                </button>
+            </div>
+            
+            <p class="mt-6 text-red-200 text-sm fade-in-up delay-300">
+                <i class="fas fa-lock mr-1"></i> No Laptop Needed • Risk Free
+            </p>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="py-20 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">What You Will <span class="text-red-600 underline decoration-yellow-400 decoration-4 underline-offset-4">Master</span></h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1: AI Learning -->
+                <div class="group bg-white rounded-2xl shadow-lg border border-gray-100 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-red-600"></div>
+                    <div class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:bg-red-600 transition-colors duration-300">
+                        <i class="fas fa-robot text-red-600 text-3xl group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-900 mb-3">AI Learning</h3>
+                    <p class="text-gray-600 text-center text-sm leading-relaxed">Automate your workflow using cutting-edge AI tools. Work smarter, not harder.</p>
+                </div>
+
+                <!-- Card 2: Digital Products -->
+                <div class="group bg-white rounded-2xl shadow-lg border border-gray-100 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-yellow-400"></div>
+                    <div class="w-16 h-16 bg-yellow-50 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:bg-yellow-400 transition-colors duration-300">
+                        <i class="fas fa-box-open text-yellow-600 text-3xl group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-900 mb-3">Digital Products</h3>
+                    <p class="text-gray-600 text-center text-sm leading-relaxed">Create, launch, and sell eBooks & templates without holding any inventory.</p>
+                </div>
+
+                <!-- Card 3: Content Creation -->
+                <div class="group bg-white rounded-2xl shadow-lg border border-gray-100 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-red-600"></div>
+                    <div class="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:bg-red-600 transition-colors duration-300">
+                        <i class="fas fa-video text-red-600 text-3xl group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-900 mb-3">Content Creation</h3>
+                    <p class="text-gray-600 text-center text-sm leading-relaxed">Master the algorithm. Create viral reels and posts directly from your phone.</p>
+                </div>
+
+                <!-- Card 4: Sales -->
+                <div class="group bg-white rounded-2xl shadow-lg border border-gray-100 p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-full h-1 bg-yellow-400"></div>
+                    <div class="w-16 h-16 bg-yellow-50 rounded-2xl flex items-center justify-center mb-6 mx-auto group-hover:bg-yellow-400 transition-colors duration-300">
+                        <i class="fas fa-chart-line text-yellow-600 text-3xl group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center text-gray-900 mb-3">High Ticket Sales</h3>
+                    <p class="text-gray-600 text-center text-sm leading-relaxed">Learn the psychology of sales and how to close deals effortlessly on WhatsApp.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Urgency Strip -->
+    <section class="bg-yellow-400 py-6 border-y-4 border-yellow-300">
+        <div class="max-w-7xl mx-auto px-4 overflow-hidden">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 text-red-900 font-bold text-lg md:text-xl text-center">
+                <span class="flex items-center"><i class="fas fa-check-circle mr-2"></i> Beginner Friendly</span>
+                <span class="hidden md:inline text-yellow-600">|</span>
+                <span class="flex items-center"><i class="fas fa-clock mr-2"></i> 1-2 Hours/Day</span>
+                <span class="hidden md:inline text-yellow-600">|</span>
+                <span class="flex items-center"><i class="fas fa-rupee-sign mr-2"></i> Daily Payouts</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-24 bg-gray-900 relative overflow-hidden">
+        <!-- Decorative Grid -->
+        <div class="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.05)_1px,transparent_1px)] bg-[size:40px_40px] opacity-20"></div>
+
+        <div class="max-w-3xl mx-auto px-4 text-center relative z-10">
+            <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Start Your Journey Today</h2>
+            <p class="text-gray-400 mb-12 text-lg leading-relaxed">Don't wait. The digital economy is booming. Click the button below to message <span class="text-yellow-400 font-bold">PHEPHANA BOY</span> directly.</p>
+            
+            <div class="bg-white p-1 rounded-3xl shadow-2xl max-w-sm mx-auto transform transition duration-300 hover:scale-105">
+                <div class="bg-white rounded-[20px] p-6 border border-gray-100">
+                    <div class="flex items-center gap-4 mb-6 border-b border-gray-100 pb-4">
+                        <div class="relative">
+                            <div class="w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg">
+                                <i class="fab fa-whatsapp text-3xl"></i>
+                            </div>
+                            <div class="absolute bottom-0 right-0 w-4 h-4 bg-green-500 border-2 border-white rounded-full animate-pulse"></div>
+                        </div>
+                        <div class="text-left">
+                            <p class="font-bold text-gray-800 text-lg">PHEPHANA BOY</p>
+                            <p class="text-xs text-green-600 font-bold uppercase tracking-wider">● Online Now</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-100 p-4 rounded-xl rounded-tl-none mb-6 text-left">
+                        <p class="text-gray-700 text-sm">Hey! 👋 Ready to scale from 0 to 10k? Click the button below to get the details immediately.</p>
+                    </div>
+
+                    <button onclick="openWhatsApp()" class="w-full bg-[#25D366] hover:bg-[#20bd5a] text-white font-bold py-4 px-6 rounded-xl flex items-center justify-center gap-3 transition duration-300 shadow-lg shadow-green-500/30 group">
+                        <i class="fab fa-whatsapp text-2xl group-hover:scale-110 transition-transform"></i> 
+                        <span class="text-lg">Chat on WhatsApp</span>
+                    </button>
+                </div>
+            </div>
+            
+            <p class="mt-8 text-gray-500 text-sm">Limited spots available for personal mentorship.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-red-800 text-red-100 py-10 border-t border-red-700">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="flex justify-center items-center mb-6">
+                 <i class="fas fa-crown text-yellow-400 text-xl mr-2"></i>
+                 <span class="font-bold text-xl text-white">PHEPHANA BOY</span>
+            </div>
+            <p class="text-sm opacity-80 mb-4">Empowering the next generation of digital entrepreneurs.</p>
+            <p class="text-xs text-red-300">&copy; 2024 PHEPHANA BOY. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <button onclick="openWhatsApp()" class="group bg-[#25D366] hover:bg-[#20bd5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-all duration-300 transform hover:scale-110 hover:rotate-12 ring-4 ring-white ring-opacity-30">
+            <i class="fab fa-whatsapp text-4xl"></i>
+            <!-- Tooltip -->
+            <span class="absolute right-full mr-4 bg-white text-gray-800 px-3 py-1 rounded-lg text-xs font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap hidden md:block">
+                Chat with me!
+            </span>
+        </button>
+    </div>
+
+    <script>
+        function openWhatsApp() {
+            // Target Phone Number (India code 91 added)
+            const phoneNumber = "918306132320"; 
+            
+            // The Message logic
+            // We use \n for newline in JS, encodeURIComponent converts it to %0A for the URL
+            const rawMessage = "My Name : \nGive me more info About : ";
+            
+            // Encode the message
+            const encodedMessage = encodeURIComponent(rawMessage);
+            
+            // Construct URL
+            // Using wa.me is the most robust standard for deep linking on mobile and desktop
+            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            
+            // Open in new tab
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
+</body>
+</html>
+
+
